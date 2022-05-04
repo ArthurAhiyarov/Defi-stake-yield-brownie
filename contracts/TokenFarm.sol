@@ -14,14 +14,6 @@ contract TokenFarm is Ownable {
     address[] public allowedTokens;
     IERC20 public dappToken;
 
-    // stakeTokens - DONE!
-    // unStakeTokens - DONE
-    // issueTokens - DONE!
-    // addAllowedTokens - DONE!
-    // getValue - DONE!
-
-    // 100 ETH 1:1 for every 1 ETH, we give 1 DappToken
-    // 50 ETH and 50 DAI staked, and we want to give a reward of 1 DAPP / 1 DAI
 
     constructor(address _dappTokenAddress) public {
         dappToken = IERC20(_dappTokenAddress);
